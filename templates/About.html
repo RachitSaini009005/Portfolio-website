@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+<style>
+   body {
+    background-color: rgb(218, 149, 218);
+    display: flex;
+    margin: 0;
+    padding: 0;
+   }
+
+   #col1 {
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for smaller screens */
+    height: auto;
+    background-color: rgb(54, 52, 49);
+    text-align: center; /* Center content on small screens */
+   }
+
+   #col1 > img {
+      max-width: 100%; /* Ensure the image doesn't overflow its container */
+      border: 5px solid #fff; /* Add a white border */
+      border-radius: 50%; /* Make the image round (assuming it's a profile picture) */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
+   }
+
+   body > #col2 {
+    width: 100%;
+    padding: 20px; /* Add some padding to the right column for spacing */
+    background-color: rgb(217, 225, 232);
+   }
+
+   .para {
+      margin-top: 10px; /* Adjust spacing for better readability */
+      text-align: justify;
+      font-size: 1.5vw;
+   }
+
+   .stling {
+      font-weight: bold;
+   }
+
+   h2 {
+      margin-left: 0; /* Reset margin to improve alignment on small screens */
+   }
+
+   a {
+      text-decoration: none; /* Remove underline from links */
+   }
+
+   @media (min-width: 768px) {
+      /* Apply styles for screens larger than 768px */
+      body {
+         display: flex;
+      }
+
+      #col1 {
+         width: 30%;
+         height: 100vh;
+      }
+
+      #col1 > img {
+         margin: 10vh;
+      }
+
+      #col2 {
+         width: 70%;
+      }
+   }
+</style>
+</head>
+<body>
+    <div id="col1">
+       <h1>hello</h1>
+       <img src="{% static '/images/profile_photo.png' %}" class="responsive_image" height="200" width="200">
+       <h2>To Contact me <a href="/Contactt" target="_self">Contact</a></h2>
+       <h2><a href="https://www.linkedin.com/in/rachit-saini-131455248">Linkdin profile </a></h2>
+    </div>
+
+    <div id="col2">
+        <h2>Introduction</h2>
+        <p class="para">I'm  <span class="stling">Rachit Saini </span>, a <span class="stling">Full Stack Developer</span>  based in <span>Indore </span>,
+          holding a degree in <span class="stling">Electronics and Instrumentation Engineering.</span>
+           Full Stack Development is where I <span class="stling">combine creativity and innovation.</span>  
+           Crafting solutions for <span class="stling">various projects</span>, whether designing intuitive 
+           interfaces or optimizing complex algorithms, fuels my creative drive.</p>
+<br>
+        <p class="para">In this ever-evolving field, <span class="stling">continuous learning and growth
+         are essential.</span>  Technology never stands still, and I embrace this journey,
+           using social media to stay updated on the latest trends. My passion for 
+           technology and problem-solving is unwavering. From early days with
+            languages like C to proficiency in <span class="stling">Python, Django, SQL, ReactJS, 
+               and more</span>, I love <span class="stling">decoding complex problems and staying on the edge 
+                  of tech advancements.</span></p>
+<br>
+         <p class="para" >My <span>hobbies</span>  include <span class="stling">meditation and exercise</span>, which keep me
+             calm and focused on my work. Explore my portfolio, featuring projects 
+             that reflect my enthusiasm and innovative spirit.</p>
+<br>
+         <p class="para"><span class="stling">Connect with me on social media</span>, delve into my projects,
+             share feedback, explore collaboration opportunities, and connect with
+              my professional journey. Your engagement is invaluable, and I'm eager
+               to hear your thoughts.</p>
+<br>
+         <p class="para">Thank you for exploring my portfolio and sharing my 
+            passion for Full Stack Development. Stay connected for upcoming
+             projects and updates.</p>
+      </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 50px;
+    background-color: #4f0b8f;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 3px 3px;
+    font-size: 30px;
+    width:300px;
+    height:300px;
+  }
+  .grid-container>.item>img{
+      width: 295px;
+      height: 295px;
+  }
+  

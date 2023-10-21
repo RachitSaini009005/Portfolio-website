@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        /* Add your styles for the "more" icon and hidden navigation here */
+        @media (max-width: 768px) {
+            .navsection nav {
+                display: none;
+            }
+            
+            .navsection .more-icon {
+                display: block;
+                cursor: pointer;
+            }
+            
+            .navsection .more-icon svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <section class="navsection">
+        <div class="logo">
+            <h2>Saini technical</h2>
+        </div>
+        
+        <nav>
+            
+            <a href="/Service" target="_self">Services</a>
+            <a href="/Gallery" target="_self">Gallery</a>
+            <!-- <a href="">Portfolio</a> -->
+            <a href="/About" target="_self">About</a>
+            <a href="/Contactt" target="_self">Contact</a>
+            <a href="/Contact_Listt" target="_self">Contact List</a>
+        </nav>
+
+        <!-- "More" icon for smaller screens -->
+
+        
+    </section>
+
+    <main>
+        <div class="leftside">
+            <h3>Hello</h3>
+            <h1>I am Rachit Saini</h1>  
+            <h2>Web Developer and Youtuber</h2>
+            <button class="btn1"><a href="">HIRE ME</a></button>
+            <button class="btn2"><a href="/Contactt" target="_self">CONTACT ME</a></button>
+        </div>
+
+        <div class="rightside">
+            <img src="{% static '/images/developer.png' %}" alt="Developer Image">
+        </div>
+    </main>
+</header>
+<div class="more-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+      </svg> 
+</div>
+<script>
+    // Add JavaScript to toggle visibility of navigation when the "more" icon is clicked
+    
+    const moreIcon = document.querySelector('.more-icon');
+    const nav = document.querySelector('nav');
+
+    moreIcon.addEventListener('click', () => {
+        nav.classList.toggle('show-nav');
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="{% static 'gallary.module.css' %}">
+    <style>
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: auto; /* Change to a single column for smaller screens */
+                grid-auto-flow: row; /* Change to vertical flow */
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #7a4ba6;">
+
+<h1 style="font-style: italic;color: aliceblue; background-color: #6d2ea8;font-size: 6vw;text-align: center;">GALLERY</h1>
+<h2 style="text-align: center;" ><ion-icon name="home" style="padding-top: 1vw; fill: black;"></ion-icon><a style="padding-left: 2vw;color:black; text-decoration: none;" href="/madhav_technicals">Home</a></h2>
+<!-- <p style="text-align: center;">Use the <em>grid-gap</em> property to specify the size of the gap between the rows, and between the columns.</p> -->
+<!-- <p style="text-align: center;">This grid has a 2% gap between both the rows and the columns.</p> -->
+
+<div class="grid-container">
+  <div class="item">
+    <img src="/static/images/office0.png" alt="">
+  </div>
+  <div class="item">
+    <img src="/static/images/office2.png" alt="">
+  </div>
+  <div class="item">
+    <img src="/static/images/office3.png" alt="">
+  </div>  
+  <!-- --- -->
+  <div class="item">
+    <img src="/static/images/office4.png" alt="">
+  </div>
+  <div class="item">
+    <img src="/static/images/office5.png" alt="">
+  </div>
+  <div class="item">
+    <img src="/static/images/office1.png" alt="">
+  </div>
+  <div class="item">
+    <img src="/static/images/office6.png" alt="">
+  </div>
+  <div class="item">
+    <img src="/static/images/office8.png" alt="">
+  </div>
+  <div class="item">
+    <img src="/static/images/office9.png" alt="">
+  </div>  
+  <div class="item">
+    <img src="/static/images/office10.png" alt="">
+  </div>
+  <div class="item">
+    <img src="/static/images/office11.png" alt="">
+  </div>
+  <div class="item">
+    <img src="/static/images/office12.png" alt="">
+  </div>
+</div>
+    
+</body>
+</html>

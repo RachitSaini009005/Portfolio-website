@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+    {% load static %}
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="{% static 'service.css' %}">
+<style>
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    color: rgb(168, 83, 248);
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .grid-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .grid-item {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .service-box {
+    text-align: center;
+  }
+
+  .service-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .grid-item:hover .service-icon {
+    transform: scale(1.2);
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+</style>
+
+
+</style>
+
+</style>
+</head>
+<body>
+
+<h1 style="color: rgb(133, 212, 235); text-align: center;">OUR SERVICES</h1>
+
+<div class="grid-container">
+   <div class="grid-item">
+        <div class="service-box">
+          <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
+          <h3>Web Design</h3>
+          <p>Our expert team at Saini's Technical crafts unique web designs, blending creativity with technical prowess. Tailored to your brand, our user-centric approach ensures seamless navigation, responsiveness across devices, and modern design trends. We optimize performance and integrate SEO, setting your website on a path to success.</p>
+        </div>
+    </div>
+ 
+  <div class="grid-item">
+    <div class="service-box">
+        <ion-icon name="logo-react" class="service-icon"></ion-icon>
+        <h3>Web Development</h3>
+        <p>In our Web Development services, we leverage cutting-edge technologies and industry best practices to create robust, scalable, and visually appealing websites. Our team ensures seamless user experiences, responsive designs, and optimized performance, meeting clients' specific business goals with precision and expertise.</p>
+      </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="service-box">
+        <ion-icon name="camera-sharp" class="service-icon"></ion-icon>
+        <h3>Photography</h3>
+        <p>In our Photography services, we masterfully capture moments with precision and artistry. Our skilled photographers expertly frame scenes, utilizing top-tier equipment and techniques to ensure captivating visuals. From portraits to events, we bring your vision to life with a blend of creativity and professionalism that exceeds expectations.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="service-box">
+        <ion-icon name="phone-portrait-sharp" class="service-icon"></ion-icon>
+        <h3>Mobile Apps</h3>
+        <p>In the Mobile Apps section, emphasize our expertise in crafting intuitive and feature-rich mobile applications. Our seasoned team leverages cutting-edge technologies to develop seamless, user-centric apps that drive engagement and deliver exceptional experiences across iOS and Android platforms. Trust us to bring your ideas to life with precision and finesse.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="service-box">
+        <ion-icon name="globe-outline" class="service-icon"></ion-icon>
+        <h3>Apps Interface</h3>
+        <p>we meticulously craft intuitive and visually captivating user interfaces for mobile applications. Our design philosophy blends user-centered principles with modern aesthetics, ensuring seamless navigation and a delightful user experience. Elevate your app's appeal and functionality with our expert interface design expertise.</p>
+    </div>
+  </div>
+
+  <div class="grid-item"> 
+     <div class="service-box">
+        <ion-icon name="camera-outline" class="service-icon"></ion-icon>
+       <h3>Graphic Design</h3>
+       <p>we meticulously craft intuitive and visually captivating user interfaces for mobile applications. Our design philosophy blends user-centered principles with modern aesthetics, ensuring seamless navigation and a delightful user experience. Elevate your app's appeal and functionality with our expert interface design expertise.</p>
+     </div>
+  </div>
+</div>
+
+</body>
+</html>
+

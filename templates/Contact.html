@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            background-color: #1b7ac7;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(161, 91, 226);
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #8b5be2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Contact Us</h1>
+
+<form action="/Contactt" method='post'>
+    {% csrf_token %}
+  
+    <div class="grid-container">
+        <div>
+            <label for="firstname">First Name</label>
+            <input name="firstname" id="firstname" type="text" value="{{firstname}}" placeholder="Enter First name">
+        </div>
+        
+        <div>
+            <label for="lastname">Last Name</label>
+            <input name="lastname" id="lastname" type="text" value="{{lastname}}" placeholder="Enter Last name">
+        </div>
+        
+        <div>
+            <label for="Email_Id">Email ID</label>
+            <input name="Email_Id" id="Email_Id" type="email" value="{{Email_Id}}" placeholder="demo@gmail.com">
+        </div>
+        
+        <div>
+            <label for="subject">Subject</label>
+            <input name="subject" id="subject" type="text" value="{{subject}}" placeholder="Subject">
+        </div>
+        
+        <div>
+            <label for="Message">Message</label>
+            <textarea id="Message" class="form-control" name="Message" value="{{Message}}" rows="6" placeholder="Your message"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

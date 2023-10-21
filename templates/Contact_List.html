@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        table {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+        #Home{
+            /* background-color: aqua; */
+            text-align: center;  /* Align text to center */
+             margin-bottom: 20px;
+            width: 100px;
+            height: auto;
+            margin: 0 auto;  /* Center horizontally using margin */
+            display: block;  /* Make it a block element to use margin */
+            text-decoration: none;
+            font-size: 20px;
+}
+
+           
+        
+        
+        
+
+        /* Responsive styles for the table */
+        @media (max-width: 600px) {
+            table, th, td {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 5px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Contact Information</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cust in custs %}
+            <tr>
+                <td>{{ cust.id }}</td>
+                <td>{{ cust.firstname }}</td>
+                <td>{{ cust.lastname }}</td>
+                <td>{{ cust.Email_Id }}</td>
+                <td>{{ cust.subject }}</td>
+                <td style="max-width: 300px;">{{ cust.Message }}</td>
+                <td>
+                    <button onclick="deleteRecord({{ cust.id }})">Delete</button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script>
+        function deleteRecord(recordId) {
+            if (confirm("Are you sure you want to delete this record?")) {
+                // Redirect to a delete view or endpoint with the record ID for deletion
+                window.location.href = `/delete/${recordId}`;
+            }
+        }
+    </script>
+    <a id="Home" href="/madhav_technicals" target="_self">Home</a>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+     
+</head>
+<body>
+    
+
+    <header>
+        <section class="navsection">
+        <div class="logo">
+            <h2>Thapa technical</h2>
+        </div>
+        
+           <nav>
+             <a href="">Home</a>
+            <a href="Service.html" target="_self">Services</a>
+            <a href="Gallery.html" target="_self">Gallery</a>
+            <a href="">Portfolio</a>
+            <a href="Aboutme.html">About</a>
+            <a href="Contact.html" target="_self">Contact</a>
+            <a href="Contact_List.html" target="_self">Contact List</a> -->
+        
+            <!-- <a href="">Home</a>
+            <a href="/Service" target="_self">Services</a>
+            <a href="/Gallery" target="_self">Gallery</a>
+            <a href="">Portfolio</a>
+            <a href="/Aboutme">About</a>
+            <a href="/Contactt" target="_self">Contact</a>
+            <a href="/Contact_Listt" target="_self">Contact List</a>
+        </nav>
+
+        </section>
+    
+    <main>
+    
+
+    
+        <div class="leftside">
+               <h3>hello</h3>
+               <h1>I am vinod thapa</h1>  
+               <h2>web developer and youtuber</h2>
+               <button class="btn1"><a href="">HIRE ME</a></button>
+               <button class="btn2"><a href="">CONTACT ME</a></button>
+            </div>
+
+
+        <div class="rightside">
+            {% comment %} <img src="../vlog/images/developer.png" alt="kk"> {% endcomment %}
+            <img src="{% static '/images/developer.png' %}">
+        </div>
+
+        
+    </header>
+
+    </main>
+    
+
+    
+</body>
+</html> --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <section class="navsection">
+        <div class="logo">
+            <h2>Thapa technical</h2>
+        </div>
+        
+        <nav>
+            <a href="">Home</a>
+            <a href="/Service" target="_self">Services</a>
+            <a href="/Gallery" target="_self">Gallery</a>
+            <a href="">Portfolio</a>
+            <a href="/Aboutme">About</a>
+            <a href="/Contactt" target="_self">Contact</a>
+            <a href="/Contact_Listt" target="_self">Contact List</a>
+        </nav>
+    </section>
+
+    <main>
+        <div class="leftside">
+            <h3>Hello</h3>
+            <h1>I am Vinod Thapa</h1>  
+            <h2>Web Developer and Youtuber</h2>
+            <button class="btn1"><a href="">HIRE ME</a></button>
+            <button class="btn2"><a href="">CONTACT ME</a></button>
+        </div>
+
+        <div class="rightside">
+            <img src="{% static '/images/developer.png' %}" alt="Developer Image">
+        </div>
+    </main>
+</header>
+
+</body>
+</html>
